@@ -1,0 +1,205 @@
+<!-- there are certain changes here compared to the original amazon website but that's because i chose some features like coloring that were aesthetically easy for my eye to notice. This is because i am color blind and i would much rather have these colors to navigate around rather than the standard colors used by amazon... -->
+<!-- Also some icons were not available as they are amazon's copyrighted icons and i could not find them so i used substitute icons that i liked rather, due to lack of availability -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css"></style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+
+            <!-- BOX 1 this one div will be just for the amazon logo -->
+
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <!-- BOX 2 this one div will be just for the deliver to india button -->
+
+             <div class="nav-adress border">
+                <p style="font-size: 0.85rem;" style="margin-left:15px">Deliver to</p> <!--rem for relative sizing-->
+                <div class="add-icon" style="display: flex;">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>           <!--to call the icon from stylesheet-->
+                    <p style="color: blue">India</p>  
+                </div>
+             </div>
+
+             <!--  BOX 3 - SEARCH BAR We are going to work on the search bar on nav-bar-->
+
+            <div class="nav-search"> <!-- the div container to store all related to the search bar-->
+                <select class="nav-search-select">
+                    <option>Jeffery</option>
+                    <option>Bezos</option>
+                </select>
+                <input placeholder="Search Amazon" class="nav-search-input border">
+                <div class="search-icon">
+                    <i class="fa-brands fa-searchengin"></i>
+                </div>
+            </div>
+            <!-- BOX 4 -- SIGN IN -->
+             <div class="nav-signin border">
+                <p><span>Hello,sign in</span></p>
+                <div class="newer">
+                    <pre class="second-line">Account & Lists  </pre>
+                    <i class="fa-sharp fa-solid fa-caret-down"></i>
+                </div>
+             </div>
+            <!-- BOX 5 --RETURNS & ORDERS -->
+            <div class="nav-returns border">
+                <p><span>Returns</span></p> 
+                <p class="second-line">& Orders</p>
+             </div>
+             <!-- BOX 6  the cart icon -->
+             <div class="nav-cart border">
+                <i class="fa-solid fa-cart-plus"></i>
+                Cart
+             </div>
+             <!-- BOX 7 language icon -->
+              <div class="language border">
+                <i class="fa-solid fa-flag-usa"></i>
+                <pre> EN  </pre>
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+              </div>
+        </div>
+        <!-- With this WE ARE DONE WITH THE NAVBAR 🥳🥳🥳 -->
+         <!-- Time for a PANEL -->
+        <div class="panel">
+            <div class="panel_icon">
+                <i class="fa-brands fa-stack-exchange"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift cards</p>
+                <p>Sell</p>
+            </div>
+            <div class="panel-deal">
+                Shop deals in Electronics 
+            </div>
+        </div>
+    </header>
+    <!-- Time for Hero IMAGE -->
+     
+     <div class="hero-section">
+        <div class="hero-says">
+            <p>You are on amazon.com. You can also shop on Amazon india for millions of products with fast local delivery.<a>Click here to go to amazon.in</a></p>
+        </div>
+     </div>
+     <div class="shop-section">
+        <!-- Since for all boxes images are different we are going to inline them -->
+        <div class="box1 box">
+            <div class="content">
+                <h2>Health & Personal care</h2>
+                <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                <p>See More</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="content">
+                <h2>Hair Dresser</h2>
+                <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                <p>See More</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="content">
+                <h2>Tables</h2>
+                <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                <p>See More</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="content">
+                <h2>Mobiles</h2>
+                <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                <p>See More</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="content">
+                <h2>Cosmetics</h2>
+                <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                <p>See More</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="content">
+                <h2>Pet Food</h2>
+                <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                <p>See More</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="content">
+                <h2>Stencils and Art</h2>
+                <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                <p>See More</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="content">
+                <h2>Women wear</h2>
+                <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                <p>See More</p>
+            </div>
+
+     </div>
+     </div>
+     
+     <!-- FOOTER DESIGNING -->
+     <footer>
+        <div class="foot-panel1">
+            Back to TOP
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to know us</p>
+                <a>Career</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Sciences</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on amazon</a>
+                <a>Sell on amazon Business</a>
+                <a>Sell apps on amazon</a>
+                <a>Become an affiliate</a>
+                <a>Advertise your products</a>
+                <a>Self-publish with us</a>
+                <a>Host an Amazon Hub</a>
+                <a style="font-weight:bolder"> > See more Make Money with us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business card</a>
+                <a>Shop with points</a>
+                <a>Reload your balance</a>
+                <a>Amazon currency convertor</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and Covid-22</a>
+                <a>Your Account</a>
+                <a> Your orders</a>
+                <a> Shipping rates & Policies</a>
+                <a>Returns and Replacements</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+      </footer>
+     
+</body>
+</html>

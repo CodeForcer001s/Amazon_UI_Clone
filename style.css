@@ -1,0 +1,252 @@
+/* UNIVERSAL -- the following are a set of few good practices */
+*{
+    margin:0;
+    font-family: Arial;
+    border:border-box; /*this will make sure that */
+}
+.navbar{ /*so we start cloning by seeing what's on top of the website...the navbar ofcourse :) */
+    height:60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex; /*To arrange all other divs in straight line on navbar*/
+    align-items: center; /*to make sure all items come towards center */
+    justify-content: space-evenly; /*To make sure that as we keep adding containers, it spaces around evenly just like the amazon website*/
+}
+/* Box-1 LOGO -- the logo is defined below here  */
+.nav-logo{
+    height:50px;
+    width:110px; /*the actual website's logo is 113 px but i didn't like the number specifically so yea.... might as well go 110 and save some space*/
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    height:50px;
+    width:100%; /*we use % instead of px so that it auto-adjusts to width whatever it becomes to*/
+    background-size: cover;
+}
+/* Now we are going to design a border only visible on hovering */
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border:2px solid blue; /* on website it's white but i like it blue */
+}   
+/* the add-icon class now needs to become a flex type  so that the logo and INDIA come in same line*/
+.add-icon{
+    display:flex;
+    align-items: center;
+}
+
+
+/* Box3 -- search bar -- Now we are going to work on the search-bar*/
+
+.nav-search{ /*the parent class for all search bar tools*/
+    display:flex;
+    justify-content: space-evenly; /*to space out matter evenly and then we shall proceed to size around things....*/
+    background-color: pink;
+    height:40px;
+    width:1200px;
+    border-radius:6px; /* we give it radius because in original website also the search nav-bar is curved in the end */
+}
+.nav-search-select{ /*specifically the select tool only*/
+    background-color: #f3f3f3;
+    width:70px;
+    text-align: center;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border:none;
+}
+.nav-search-input{
+    width:100%;
+    font-size : 0.8182rem;
+    border:none;
+}
+.search-icon{
+    width:45px;
+    /* to make it horizontally {from left to right} center */
+    display:flex;
+    justify-content: center;
+    /* now to vertically centralize {from top to bottom} */
+    align-items:center;
+    /* to increase size of even icons, font-size works !!!! */
+    font-size:1.45rem;
+    background-color:#febd68;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    /* to give the icon a color same to the background */
+    color: #0f1111;
+}
+/* to make the searchbar in whole orangish on hovering...we try this  on the overall parent class since it affects all 3 of them*/
+.nav-search:hover{
+    border: 2px solid gold;
+}
+/* Box4 -- signin box*/
+span{
+    font-size: 0.75rem;
+}
+.second-line{
+    font-size: 0.95rem;
+    font-weight: bolder;
+}
+.newer{
+    display:flex;
+}
+
+
+/* BOX 5 doesn't really need one, it has simply borrowed the properties of box4 */
+
+.nav-cart{
+    text-align: bottom;
+    font-size: 1.04rem;
+    font-weight:800;
+}
+/* to just change the icon */
+.nav-cart i{
+    font-size: 33px;
+    color:#f3f3f3
+}
+
+/* BOX - 7 Language */
+.language i{
+    font-size:15px;
+}
+.language{
+    display: flex;
+    height:40px;
+    align-items: center;
+}
+
+/* TIME FOR PANEL NOW */
+.panel{
+    height:40px;
+    background-color: #222f3d;
+    display:flex;
+    color:white;
+    align-items: center; /* vertical alignment up to down */
+    justify-content: space-evenly;
+}
+.panel-ops p{
+    display: inline;
+    margin-left: 20px;
+    height:40px;
+    width:50px;
+}
+.panel-ops p:hover{
+    border: 3px solid blue; /* on website it's white but i like it blue */
+}
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-deal{
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+
+
+/* Hero section right now  */
+
+
+.hero-section{
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    height:400px;
+    display:flex; /*here the display flex makes sure that the div comes above hero-image.*/
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-says{
+    background-color: white;
+    color:black;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width:80%;
+    margin-bottom: 25px;
+}
+.hero-says a{
+    color: #007185;
+}
+
+/* THE SHOPPING AREA */
+.box{
+    border:2px solid black;
+    height:400px;
+    width:23%;
+    background-color:white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+
+}
+.shop-section{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box-img{
+    height: 300px;
+    background-size: contain;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.content p{
+    color: #007185;
+}
+
+/* FOOTER */
+footer{
+    margin-top:15px;
+
+}
+.foot-panel1{
+    background-color: #37475a;
+    color:white;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.85rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color:white;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    padding: 30px 0px 30px;
+}
+ul{
+    margin-top:20px;
+    margin-left: 20px;
+}
+ul a{
+    display:block;
+    font-size: 0.91rem;
+    margin-top:10px;
+    color:#dddddd;
+}
+ul p{
+    font-weight: bolder;
+}
+.foot-panel3{
+    background-color:#222f3d;
+    color:white;
+    border:0.5px solid white;
+    height:70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url('amazon_logo.png');
+    background-size:cover;
+    height:50px;
+    width:100px;
+}
